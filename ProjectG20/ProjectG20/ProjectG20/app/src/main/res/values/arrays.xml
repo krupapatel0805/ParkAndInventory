@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="states_array">
+        <item>AL - Alabama</item>
+        <item>AK - Alaska</item>
+        <item>AZ - Arizona</item>
+        <item>AR - Arkansas</item>
+        <item>CA - California</item>
+        <item>CO - Colorado</item>
+        <item>CT - Connecticut</item>
+        <item>DE - Delaware</item>
+        <item>FL - Florida</item>
+        <item>GA - Georgia</item>
+        <item>HI - Hawaii</item>
+        <item>ID - Idaho</item>
+        <item>IL - Illinois</item>
+        <item>IN - Indiana</item>
+        <item>IA - Iowa</item>
+        <item>KS - Kansas</item>
+        <item>KY - Kentucky</item>
+        <item>LA - Louisiana</item>
+        <item>ME - Maine</item>
+        <item>MD - Maryland</item>
+        <item>MA - Massachusetts</item>
+        <item>MI - Michigan</item>
+        <item>MN - Minnesota</item>
+        <item>MS - Mississippi</item>
+        <item>MO - Missouri</item>
+        <item>MT - Montana</item>
+        <item>NE - Nebraska</item>
+        <item>NV - Nevada</item>
+        <item>NH - New Hampshire</item>
+        <item>NJ - New Jersey</item>
+        <item>NM - New Mexico</item>
+        <item>NY - New York</item>
+        <item>NC - North Carolina</item>
+        <item>ND - North Dakota</item>
+        <item>OH - Ohio</item>
+        <item>OK - Oklahoma</item>
+        <item>OR - Oregon</item>
+        <item>PA - Pennsylvania</item>
+        <item>RI - Rhode Island</item>
+        <item>SC - South Carolina</item>
+        <item>SD - South Dakota</item>
+        <item>TN - Tennessee</item>
+        <item>TX - Texas</item>
+        <item>UT - Utah</item>
+        <item>VT - Vermont</item>
+        <item>VA - Virginia</item>
+        <item>WA - Washington</item>
+        <item>WV - West Virginia</item>
+        <item>WI - Wisconsin</item>
+        <item>WY - Wyoming</item>
+    </string-array>
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.projectg20.fragments.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_findParkFragment"
+            app:destination="@id/findParkFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_myItineraryFragment"
+            app:destination="@id/myItineraryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/findParkFragment"
+        android:name="com.example.projectg20.fragments.FindParkFragment"
+        android:label="fragment_find_park"
+        tools:layout="@layout/fragment_find_park" >
+        <action
+            android:id="@+id/action_findParkFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_findParkFragment_to_parkDetailsFragment"
+            app:destination="@id/parkDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myItineraryFragment"
+        android:name="com.example.projectg20.fragments.My_itinerary_list"
+        android:label="fragment_my_itinerary"
+        tools:layout="@layout/fragment_my_itinerary_list" >
+        <argument
+            android:name="park"
+            app:argType="com.example.project_g20.models.Park" />
+        <action
+            android:id="@+id/action_myItineraryFragment_to_myItineraryDetailsFragment"
+            app:destination="@id/myItineraryDetailsFragment" />
+        <action
+            android:id="@+id/action_myItineraryFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myItineraryDetailsFragment"
+        android:name="com.example.projectg20.fragments.My_itinerary_details"
+        android:label="fragment_my_itinerary_details"
+        tools:layout="@layout/fragment_my_itinerary_details" >
+        <argument
+            android:name="park"
+            app:argType="com.example.project_g20.models.Park" />
+        <action
+            android:id="@+id/action_myItineraryDetailsFragment_to_myItineraryFragment"
+            app:destination="@id/myItineraryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/parkDetailsFragment"
+        android:name="com.example.projectg20.fragments.ParkDetailsFragment"
+        android:label="fragment_park_details"
+        tools:layout="@layout/fragment_park_details" >
+        <action
+            android:id="@+id/action_parkDetailsFragment_to_findParkFragment"
+            app:destination="@id/findParkFragment"
+            android:name="parksInState"
+            app:argType="com.example.projectg20.ParkData[]"
+            android:defaultValue="@null"/>
+    </fragment>
+</navigation>
